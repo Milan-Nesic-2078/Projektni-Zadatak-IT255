@@ -27,4 +27,14 @@ export class EmployeeService {
 
   }
 
+<<<<<<< HEAD
+=======
+  delEmploye(): void{
+
+    
+
+
+  }
+
+>>>>>>> 81b3d5e (Projakt-IT255-V01)
 }

@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../employee.service';
 import { Router } from '@angular/router';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 81b3d5e (Projakt-IT255-V01)
 @Component({
   selector: 'app-employeeslist',
   templateUrl: './employeeslist.component.html',
@@ -19,6 +22,11 @@ export class EmployeeslistComponent implements OnInit {
 
   num: number = 1;
 
+<<<<<<< HEAD
+=======
+  emp: any;
+
+>>>>>>> 81b3d5e (Projakt-IT255-V01)
 
   constructor(private _emplService: EmployeeService, private _router: Router) {
 
@@ -34,7 +42,13 @@ export class EmployeeslistComponent implements OnInit {
 
   onclick(reff: any) {
 
+<<<<<<< HEAD
     delete this.emplArr[reff.empId];
+=======
+    this.emp = this.emplArr.find(id => id.empId === reff.empId);
+
+    delete this.emplArr[this.emp.empId];
+>>>>>>> 81b3d5e (Projakt-IT255-V01)
 
   }
 
